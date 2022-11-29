@@ -51,7 +51,7 @@ Feature: Generate Slate documentation from test examples
         config.api_name = "Example API"
         config.api_explanation = "An explanation of the API"
         config.format = :slate
-        config.curl_host = 'http://localhost:3000'
+        config.curl_host = 'http://localhost:9988'
         config.request_headers_to_include = %w[Content-Type Host]
         config.response_headers_to_include = %w[Content-Type Content-Length]
       end
@@ -154,7 +154,7 @@ Feature: Generate Slate documentation from test examples
     ### Request
 
     ```shell
-    curl -g "http://localhost:3000/orders" -X GET \
+    curl -g "http://localhost:9988/orders" -X GET \
     	-H "Host: example.org" \
     	-H "Cookie: "
     ```
@@ -218,7 +218,7 @@ Feature: Generate Slate documentation from test examples
     ### Request
     
     ```shell
-    curl "http://localhost:3000/orders" -d 'name=Order+3&amount=33.0' -X POST \
+    curl "http://localhost:9988/orders" -d 'name=Order+3&amount=33.0' -X POST \
     	-H "Host: example.org" \
     	-H "Content-Type: application/x-www-form-urlencoded" \
     	-H "Cookie: "

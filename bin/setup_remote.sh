@@ -52,7 +52,7 @@ if [ "$(docker ps -aq -f name=^mangosteen-prod-1$)" ]; then
 fi
 
 title 'app: docker run'
-docker run -d -p 3000:3000 \
+docker run -d -p 9988:9988 \
            --network=network1 \
            --name=$container_name \
            -e DB_HOST=$DB_HOST \

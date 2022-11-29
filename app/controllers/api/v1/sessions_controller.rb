@@ -4,7 +4,9 @@ class Api::V1::SessionsController < ApplicationController
     if Rails.env.test?
       return render status: :unauthorized if params[:code] != '123456'
     else
+      p params
       canSignin = ValidationCode.exists? email: params[:email], code: params[:code], used_at: nil
+      p canSignin
       return render status: :unauthorized unless canSignin
     end
     user = User.find_or_create_by email: params[:email]

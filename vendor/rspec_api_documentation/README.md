@@ -75,11 +75,11 @@ end
 ####
 For both raddocs and apitome, start rails server. Then
 
-    open http://localhost:3000/docs for raddocs
+    open http://localhost:9988/docs for raddocs
 
     or
 
-    http://localhost:3000/api/docs for apitome
+    http://localhost:9988/api/docs for apitome
 
 ## Sample App
 
@@ -391,7 +391,7 @@ info:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
   version: 1.0.0
-host: 'localhost:3000'
+host: 'localhost:9988'
 schemes:
   - http
   - https

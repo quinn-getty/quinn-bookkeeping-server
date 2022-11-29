@@ -3,7 +3,7 @@ module RspecApiDocumentation
     class Root < Node
       add_setting :swagger, :default => '2.0', :required => true
       add_setting :info, :default => Info.new, :required => true, :schema => Info
-      add_setting :host, :default => 'localhost:3000'
+      add_setting :host, :default => 'localhost:9988'
       add_setting :basePath
       add_setting :schemes, :default => %w(http https)
       add_setting :consumes, :default => %w(application/json application/xml)

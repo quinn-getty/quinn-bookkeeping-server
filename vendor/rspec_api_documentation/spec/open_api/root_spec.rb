@@ -12,7 +12,7 @@ describe RspecApiDocumentation::OpenApi::Root do
 
     its(:swagger) { should == '2.0' }
     its(:info) { should be_a(RspecApiDocumentation::OpenApi::Info) }
-    its(:host) { should == 'localhost:3000' }
+    its(:host) { should == 'localhost:9988' }
     its(:basePath) { should be_nil }
     its(:schemes) { should == %w(http https) }
     its(:consumes) { should == %w(application/json application/xml) }

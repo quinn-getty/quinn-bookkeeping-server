@@ -4,7 +4,7 @@ require 'rspec_api_documentation/dsl'
 
 RspecApiDocumentation.configure do |config|
   config.format = [:open_api, :html]
-  config.curl_host = 'http://localhost:3000'
+  config.curl_host = 'http://localhost:9988'
   config.api_name = "Example App API"
   config.api_explanation = "API Example Description"
 end

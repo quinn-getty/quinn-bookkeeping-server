@@ -75,7 +75,7 @@ Feature: Generate Open API Specification from test examples
           },
           "version": "1.0.1"
         },
-        "host": "localhost:3000",
+        "host": "localhost:9988",
         "schemes": [
           "http"
         ],
@@ -309,7 +309,7 @@ Feature: Generate Open API Specification from test examples
         },
         "version": "1.0.1"
       },
-      "host": "localhost:3000",
+      "host": "localhost:9988",
       "schemes": [
         "http"
       ],
